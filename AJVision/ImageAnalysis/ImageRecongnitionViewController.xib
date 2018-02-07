@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageRecongnitionViewController">
+            <connections>
+                <outlet property="ansView" destination="kba-1x-WgF" id="k8p-aY-j6J"/>
+                <outlet property="choosePhotoButton" destination="RRB-h3-TPs" id="LvK-v6-WsY"/>
+                <outlet property="imageView" destination="kx5-Bl-in2" id="Hx0-cE-ksO"/>
+                <outlet property="recongButton" destination="6LN-j2-lq1" id="19O-cq-LfD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kx5-Bl-in2">
+                    <rect key="frame" x="16" y="30" width="343" height="343"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kx5-Bl-in2" secondAttribute="height" multiplier="1:1" id="lf6-cs-2z2"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRB-h3-TPs">
+                    <rect key="frame" x="16" y="393" width="343" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="oZ9-6K-iE2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Take A Photo">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LN-j2-lq1">
+                    <rect key="frame" x="16" y="443" width="343" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="UNn-Da-LAx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="What's this?">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kba-1x-WgF">
+                    <rect key="frame" x="16" y="491" width="343" height="141"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kx5-Bl-in2" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="0Kf-NR-woA"/>
+                <constraint firstItem="6LN-j2-lq1" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="9kz-5q-9NZ"/>
+                <constraint firstItem="kx5-Bl-in2" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="EJX-9J-YQJ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="6LN-j2-lq1" secondAttribute="trailing" constant="16" id="HE3-g7-VU4"/>
+                <constraint firstItem="6LN-j2-lq1" firstAttribute="top" secondItem="RRB-h3-TPs" secondAttribute="bottom" constant="10" id="OrM-rF-jlK"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kx5-Bl-in2" secondAttribute="trailing" constant="16" id="SBJ-qC-pHO"/>
+                <constraint firstItem="RRB-h3-TPs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="VLj-fe-PXq"/>
+                <constraint firstItem="RRB-h3-TPs" firstAttribute="top" secondItem="kx5-Bl-in2" secondAttribute="bottom" constant="20" id="cS7-qT-bzh"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="RRB-h3-TPs" secondAttribute="trailing" constant="16" id="p9Y-t8-D1g"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
