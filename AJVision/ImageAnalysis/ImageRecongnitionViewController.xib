@@ -13,7 +13,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageRecongnitionViewController">
             <connections>
-                <outlet property="ansView" destination="kba-1x-WgF" id="k8p-aY-j6J"/>
                 <outlet property="choosePhotoButton" destination="RRB-h3-TPs" id="LvK-v6-WsY"/>
                 <outlet property="imageView" destination="kx5-Bl-in2" id="Hx0-cE-ksO"/>
                 <outlet property="recongButton" destination="6LN-j2-lq1" id="19O-cq-LfD"/>

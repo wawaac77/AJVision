@@ -14,14 +14,17 @@ target 'AJVision' do
     pod 'Masonry'
     pod 'SDWebImage', '~> 4.0'
 
+
   target 'AJVisionTests' do
     inherit! :search_paths
     # Pods for testing
+
   end
 
   target 'AJVisionUITests' do
     inherit! :search_paths
     # Pods for testing
+
   end
 
 end

@@ -23,6 +23,7 @@
 		78B47DD6202AE25F008EC2DF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B47DD0202AE25F008EC2DF /* Reachability.m */; };
 		78B47DD7202AE25F008EC2DF /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B47DD1202AE25F008EC2DF /* EGOCache.m */; };
 		78B47DD8202AE25F008EC2DF /* RequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B47DD4202AE25F008EC2DF /* RequestTool.m */; };
+		78ECACB3202AF88300389B98 /* IRLabelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ECACB2202AF88300389B98 /* IRLabelModel.m */; };
 		959EA8D9C4CD4064DCC4B130 /* libPods-AJVisionUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 350636924DB72281D76F8A02 /* libPods-AJVisionUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -76,7 +77,10 @@
 		78B47DD3202AE25F008EC2DF /* NetworkUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkUnit.h; sourceTree = "<group>"; };
 		78B47DD4202AE25F008EC2DF /* RequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestTool.m; sourceTree = "<group>"; };
 		78B47DDA202AE320008EC2DF /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
-		78B47DDB202AE77D008EC2DF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		78ECACB1202AF88300389B98 /* IRLabelModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRLabelModel.h; sourceTree = "<group>"; };
+		78ECACB2202AF88300389B98 /* IRLabelModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRLabelModel.m; sourceTree = "<group>"; };
+		78ECACB4202AF94000389B98 /* Headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
+		78ECACB5202AF98F00389B98 /* AJVisionPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJVisionPrefix.pch; sourceTree = "<group>"; };
 		7B48D80DA4937FED717CDD25 /* libPods-AJVisionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AJVisionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97F2E4CA81A29CFAB7D6DFE /* Pods-AJVisionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AJVisionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AJVisionTests/Pods-AJVisionTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC97C4FFDC0541FCA5FB2E7F /* Pods-AJVisionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AJVisionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AJVisionTests/Pods-AJVisionTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,11 +151,12 @@
 		78B47D922029BCDF008EC2DF /* AJVision */ = {
 			isa = PBXGroup;
 			children = (
+				78ECACB5202AF98F00389B98 /* AJVisionPrefix.pch */,
 				78B47D932029BCDF008EC2DF /* AppDelegate.h */,
 				78B47D942029BCDF008EC2DF /* AppDelegate.m */,
+				78B47DC5202A9822008EC2DF /* ImageAnalysis */,
 				78B47DD9202AE2F0008EC2DF /* Expand */,
 				78B47DCB202AE251008EC2DF /* Resources */,
-				78B47DC5202A9822008EC2DF /* ImageAnalysis */,
 				78B47D962029BCDF008EC2DF /* ViewController.h */,
 				78B47D972029BCDF008EC2DF /* ViewController.m */,
 				78B47D992029BCDF008EC2DF /* Main.storyboard */,
@@ -159,7 +164,6 @@
 				78B47D9E2029BCDF008EC2DF /* LaunchScreen.storyboard */,
 				78B47DA12029BCDF008EC2DF /* Info.plist */,
 				78B47DA22029BCDF008EC2DF /* main.m */,
-				78B47DDB202AE77D008EC2DF /* PrefixHeader.pch */,
 			);
 			path = AJVision;
 			sourceTree = "<group>";
@@ -185,6 +189,7 @@
 		78B47DC5202A9822008EC2DF /* ImageAnalysis */ = {
 			isa = PBXGroup;
 			children = (
+				78ECACB0202AF85100389B98 /* Model */,
 				78B47DC6202A9853008EC2DF /* ImageRecongnitionViewController.h */,
 				78B47DC7202A9853008EC2DF /* ImageRecongnitionViewController.m */,
 				78B47DC8202A9853008EC2DF /* ImageRecongnitionViewController.xib */,
@@ -219,8 +224,18 @@
 			isa = PBXGroup;
 			children = (
 				78B47DDA202AE320008EC2DF /* Macros.h */,
+				78ECACB4202AF94000389B98 /* Headers.h */,
 			);
 			path = Expand;
+			sourceTree = "<group>";
+		};
+		78ECACB0202AF85100389B98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78ECACB1202AF88300389B98 /* IRLabelModel.h */,
+				78ECACB2202AF88300389B98 /* IRLabelModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9775BC0B4639AF40A97100BB /* Pods */ = {
@@ -381,9 +396,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AJVisionTests/Pods-AJVisionTests-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -396,9 +416,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AJVisionUITests/Pods-AJVisionUITests-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -532,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78B47D982029BCDF008EC2DF /* ViewController.m in Sources */,
+				78ECACB3202AF88300389B98 /* IRLabelModel.m in Sources */,
 				78B47DA32029BCDF008EC2DF /* main.m in Sources */,
 				78B47D952029BCDF008EC2DF /* AppDelegate.m in Sources */,
 				78B47DD7202AE25F008EC2DF /* EGOCache.m in Sources */,
@@ -703,6 +729,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36DSW7DB5F;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AJVision/AJVisionPrefix.pch";
 				INFOPLIST_FILE = AJVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AJ.AJVision;
@@ -717,6 +745,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36DSW7DB5F;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AJVision/AJVisionPrefix.pch";
 				INFOPLIST_FILE = AJVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AJ.AJVision;
