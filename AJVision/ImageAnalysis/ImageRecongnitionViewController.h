@@ -14,4 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *recongButton;
 @property (weak, nonatomic) IBOutlet UIView *ansView;
 
+- (IBAction)choosePhotoButtonClicked:(id)sender;
+- (IBAction)recongButtonClicked:(id)sender;
+
 @end

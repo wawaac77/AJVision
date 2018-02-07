@@ -41,6 +41,9 @@
                     <state key="normal" title="Take A Photo">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="choosePhotoButtonClicked:" destination="-1" eventType="touchUpInside" id="feu-k6-dQ7"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LN-j2-lq1">
                     <rect key="frame" x="16" y="443" width="343" height="40"/>
@@ -52,10 +55,12 @@
                     <state key="normal" title="What's this?">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="recongButtonClicked:" destination="-1" eventType="touchUpInside" id="OIg-3w-BAH"/>
+                    </connections>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kba-1x-WgF">
-                    <rect key="frame" x="16" y="491" width="343" height="141"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kba-1x-WgF">
+                    <rect key="frame" x="16" y="493" width="343" height="154"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
             </subviews>
@@ -65,10 +70,14 @@
                 <constraint firstItem="6LN-j2-lq1" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="9kz-5q-9NZ"/>
                 <constraint firstItem="kx5-Bl-in2" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="EJX-9J-YQJ"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="6LN-j2-lq1" secondAttribute="trailing" constant="16" id="HE3-g7-VU4"/>
+                <constraint firstItem="kba-1x-WgF" firstAttribute="top" secondItem="6LN-j2-lq1" secondAttribute="bottom" constant="10" id="Hv2-Zs-dCQ"/>
+                <constraint firstItem="kba-1x-WgF" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="Knv-o6-KbG"/>
                 <constraint firstItem="6LN-j2-lq1" firstAttribute="top" secondItem="RRB-h3-TPs" secondAttribute="bottom" constant="10" id="OrM-rF-jlK"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kx5-Bl-in2" secondAttribute="trailing" constant="16" id="SBJ-qC-pHO"/>
                 <constraint firstItem="RRB-h3-TPs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="VLj-fe-PXq"/>
                 <constraint firstItem="RRB-h3-TPs" firstAttribute="top" secondItem="kx5-Bl-in2" secondAttribute="bottom" constant="20" id="cS7-qT-bzh"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kba-1x-WgF" secondAttribute="trailing" constant="16" id="fAL-8M-e4t"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="kba-1x-WgF" secondAttribute="bottom" constant="20" id="iKT-FV-9Bj"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="RRB-h3-TPs" secondAttribute="trailing" constant="16" id="p9Y-t8-D1g"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
