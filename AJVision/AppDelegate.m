@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ImageRecongnitionViewController.h"
+#import "FaceAnalysisViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -19,9 +21,41 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     
-    UIViewController *imageRecongVC = [[ImageRecongnitionViewController alloc] init];
-    imageRecongVC.view.frame = [UIScreen mainScreen].bounds;
-    self.window.rootViewController = imageRecongVC;
+    // Root View Controller
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.delegate = self;
+    tabBarController.tabBar.barTintColor = [UIColor whiteColor];
+    tabBarController.tabBar.tintColor = [UIColor blackColor];
+
+    ImageRecongnitionViewController *imageRecongVC = [[ImageRecongnitionViewController alloc] init];
+    UINavigationController *imageNav = [[UINavigationController alloc] initWithRootViewController:imageRecongVC];
+    imageRecongVC.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+    imageRecongVC.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    [imageRecongVC.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],  NSFontAttributeName:[UIFont fontWithName:@"Helvetica Neue" size:21]}];
+    
+    imageNav.navigationBar.translucent = NO;
+    [imageNav.navigationBar setBackgroundImage:[[UIImage imageNamed:@"010_painting"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch] forBarMetrics:UIBarMetricsDefault];
+    
+    UITabBarItem *imageBarItem=[[UITabBarItem alloc]initWithTitle:@"Image" image:[UIImage imageNamed:@"010_painting"] selectedImage:[[UIImage imageNamed:@"010_painting"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    [imageBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor blackColor]} forState:UIControlStateNormal];
+    [imageBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:1.0f green:0.847f blue:0.208f alpha:1.0f]} forState:UIControlStateSelected];
+    imageNav.tabBarItem = imageBarItem;
+
+    
+    FaceAnalysisViewController *faceVC = [[FaceAnalysisViewController alloc] init];
+    UINavigationController *faceNav = [[UINavigationController alloc] initWithRootViewController:faceVC];
+    faceVC.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+    faceVC.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    [faceNav.navigationBar setBackgroundImage:[[UIImage imageNamed:@"004_dancer"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch] forBarMetrics:UIBarMetricsDefault];
+    UITabBarItem *faceBarItem=[[UITabBarItem alloc]initWithTitle:@"Face" image:[UIImage imageNamed:@"004_dancer"] selectedImage:[[UIImage imageNamed:@"004_dancer"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    [faceBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor blackColor]} forState:UIControlStateNormal];
+    [faceBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:1.0f green:0.847f blue:0.208f alpha:1.0f]} forState:UIControlStateSelected];
+    faceNav.tabBarItem = faceBarItem;
+    
+    NSArray *ncArr = @[imageNav, faceNav];
+    tabBarController.viewControllers = ncArr;
+     
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
 
     return YES;

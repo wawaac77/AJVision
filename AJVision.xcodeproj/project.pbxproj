@@ -24,6 +24,11 @@
 		78B47DD7202AE25F008EC2DF /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B47DD1202AE25F008EC2DF /* EGOCache.m */; };
 		78B47DD8202AE25F008EC2DF /* RequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B47DD4202AE25F008EC2DF /* RequestTool.m */; };
 		78ECACB3202AF88300389B98 /* IRLabelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ECACB2202AF88300389B98 /* IRLabelModel.m */; };
+		78F57048202C04A500FA363D /* FaceAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F57046202C04A500FA363D /* FaceAnalysisViewController.m */; };
+		78F57049202C04A500FA363D /* FaceAnalysisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78F57047202C04A500FA363D /* FaceAnalysisViewController.xib */; };
+		78F5704D202C063000FA363D /* icon_dancer.png in Resources */ = {isa = PBXBuildFile; fileRef = 78F5704C202C063000FA363D /* icon_dancer.png */; };
+		78F5704F202C065D00FA363D /* icon_painting.png in Resources */ = {isa = PBXBuildFile; fileRef = 78F5704E202C065D00FA363D /* icon_painting.png */; };
+		78F57052202C365C00FA363D /* GFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F57051202C365C00FA363D /* GFHTTPSessionManager.m */; };
 		959EA8D9C4CD4064DCC4B130 /* libPods-AJVisionUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 350636924DB72281D76F8A02 /* libPods-AJVisionUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +86,13 @@
 		78ECACB2202AF88300389B98 /* IRLabelModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRLabelModel.m; sourceTree = "<group>"; };
 		78ECACB4202AF94000389B98 /* Headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
 		78ECACB5202AF98F00389B98 /* AJVisionPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJVisionPrefix.pch; sourceTree = "<group>"; };
+		78F57045202C04A500FA363D /* FaceAnalysisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceAnalysisViewController.h; sourceTree = "<group>"; };
+		78F57046202C04A500FA363D /* FaceAnalysisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceAnalysisViewController.m; sourceTree = "<group>"; };
+		78F57047202C04A500FA363D /* FaceAnalysisViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaceAnalysisViewController.xib; sourceTree = "<group>"; };
+		78F5704C202C063000FA363D /* icon_dancer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_dancer.png; sourceTree = "<group>"; };
+		78F5704E202C065D00FA363D /* icon_painting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_painting.png; sourceTree = "<group>"; };
+		78F57050202C365C00FA363D /* GFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHTTPSessionManager.h; sourceTree = "<group>"; };
+		78F57051202C365C00FA363D /* GFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHTTPSessionManager.m; sourceTree = "<group>"; };
 		7B48D80DA4937FED717CDD25 /* libPods-AJVisionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AJVisionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97F2E4CA81A29CFAB7D6DFE /* Pods-AJVisionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AJVisionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AJVisionTests/Pods-AJVisionTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC97C4FFDC0541FCA5FB2E7F /* Pods-AJVisionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AJVisionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AJVisionTests/Pods-AJVisionTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +166,7 @@
 				78ECACB5202AF98F00389B98 /* AJVisionPrefix.pch */,
 				78B47D932029BCDF008EC2DF /* AppDelegate.h */,
 				78B47D942029BCDF008EC2DF /* AppDelegate.m */,
+				78F57041202C045E00FA363D /* FaceAnalysis */,
 				78B47DC5202A9822008EC2DF /* ImageAnalysis */,
 				78B47DD9202AE2F0008EC2DF /* Expand */,
 				78B47DCB202AE251008EC2DF /* Resources */,
@@ -198,6 +211,7 @@
 		78B47DCB202AE251008EC2DF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				78F5704A202C057200FA363D /* Images */,
 				78B47DCC202AE251008EC2DF /* RequestTool */,
 			);
 			path = Resources;
@@ -206,6 +220,8 @@
 		78B47DCC202AE251008EC2DF /* RequestTool */ = {
 			isa = PBXGroup;
 			children = (
+				78F57050202C365C00FA363D /* GFHTTPSessionManager.h */,
+				78F57051202C365C00FA363D /* GFHTTPSessionManager.m */,
 				78B47DCD202AE25E008EC2DF /* EGOCache.h */,
 				78B47DD1202AE25F008EC2DF /* EGOCache.m */,
 				78B47DD3202AE25F008EC2DF /* NetworkUnit.h */,
@@ -244,6 +260,57 @@
 				78B47DC8202A9853008EC2DF /* ImageRecongnitionViewController.xib */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		78F57041202C045E00FA363D /* FaceAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				78F57042202C047C00FA363D /* Controller */,
+				78F57043202C047C00FA363D /* Model */,
+				78F57044202C047C00FA363D /* View */,
+			);
+			path = FaceAnalysis;
+			sourceTree = "<group>";
+		};
+		78F57042202C047C00FA363D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78F57045202C04A500FA363D /* FaceAnalysisViewController.h */,
+				78F57046202C04A500FA363D /* FaceAnalysisViewController.m */,
+				78F57047202C04A500FA363D /* FaceAnalysisViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		78F57043202C047C00FA363D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78F57044202C047C00FA363D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78F5704A202C057200FA363D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				78F5704B202C058300FA363D /* Icons */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		78F5704B202C058300FA363D /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				78F5704C202C063000FA363D /* icon_dancer.png */,
+				78F5704E202C065D00FA363D /* icon_painting.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 		9775BC0B4639AF40A97100BB /* Pods */ = {
@@ -376,7 +443,10 @@
 			files = (
 				78B47DA02029BCDF008EC2DF /* LaunchScreen.storyboard in Resources */,
 				78B47DCA202A9853008EC2DF /* ImageRecongnitionViewController.xib in Resources */,
+				78F57049202C04A500FA363D /* FaceAnalysisViewController.xib in Resources */,
 				78B47D9D2029BCDF008EC2DF /* Assets.xcassets in Resources */,
+				78F5704D202C063000FA363D /* icon_dancer.png in Resources */,
+				78F5704F202C065D00FA363D /* icon_painting.png in Resources */,
 				78B47D9B2029BCDF008EC2DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,6 +643,8 @@
 				78B47DD6202AE25F008EC2DF /* Reachability.m in Sources */,
 				78B47DD5202AE25F008EC2DF /* NetworkUnit.m in Sources */,
 				78B47DD8202AE25F008EC2DF /* RequestTool.m in Sources */,
+				78F57048202C04A500FA363D /* FaceAnalysisViewController.m in Sources */,
+				78F57052202C365C00FA363D /* GFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
