@@ -8,7 +8,7 @@
 
 #import "FCSearchViewController.h"
 #import "FCPPSDK.h"
-
+#import <SDImageCache.h>
 
 static NSString *cellId = @"faceCellId";
 #define faceFilePath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"face.plist"]

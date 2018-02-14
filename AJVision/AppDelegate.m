@@ -8,8 +8,11 @@
 
 #import "AppDelegate.h"
 #import "ImageRecongnitionViewController.h"
+<<<<<<< HEAD
 #import "MMHomeViewController.h"
 
+=======
+>>>>>>> parent of 7b65de9... tried a lot how to call api
 @interface AppDelegate ()
 
 @end
@@ -21,6 +24,7 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     
+<<<<<<< HEAD
     // Root View Controller
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.delegate = self;
@@ -56,6 +60,11 @@
     tabBarController.viewControllers = ncArr;
      
     self.window.rootViewController = tabBarController;
+=======
+    UIViewController *imageRecongVC = [[ImageRecongnitionViewController alloc] init];
+    imageRecongVC.view.frame = [UIScreen mainScreen].bounds;
+    self.window.rootViewController = imageRecongVC;
+>>>>>>> parent of 7b65de9... tried a lot how to call api
     [self.window makeKeyAndVisible];
 
     return YES;

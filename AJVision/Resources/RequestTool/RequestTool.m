@@ -30,19 +30,17 @@ static AFHTTPSessionManager *_manager;
         
         _manager = [AFHTTPSessionManager manager];
         _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript" , @"text/plain" ,@"text/html",@"application/xml",@"image/jpeg",@"application/x-www-form-urlencoded", nil];
-
-        
+//        _manager.requestSerializer = [AFHTTPRequestSerializer serializer];
         [_manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
         _manager.requestSerializer.timeoutInterval = 5.0f;
         [_manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
         
-        _manager.requestSerializer = [AFHTTPRequestSerializer serializer];
         _manager.requestSerializer = [AFJSONRequestSerializer serializer];
         _manager.responseSerializer = [AFJSONResponseSerializer serializer];
 
-        [_manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"]; //AJ
-        //[_manager.requestSerializer setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"]; //AJ
-        [_manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"]; //AJ
+        //[_manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+        [_manager.requestSerializer setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"]; //AJ
+        
         //[_manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Accept"];
         //[_manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"]; //AJNew
 //        _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
