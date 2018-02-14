@@ -19,6 +19,5 @@
 #import <SVProgressHUD.h>
 #import <MJExtension.h>
 #import <SDWebImage/UIImageView+WebCache.h>
-#import <MBProgressHUD.h>
 
 #endif /* Headers_h */

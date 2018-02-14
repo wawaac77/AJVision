@@ -9,29 +9,6 @@
 /* Begin PBXBuildFile section */
 		1B3B82481E775077FDE1CC30 /* libPods-AJVisionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B48D80DA4937FED717CDD25 /* libPods-AJVisionTests.a */; };
 		2F42F93606498B032A4DB041 /* libPods-AJVision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31AD0691CB8DFE03F81CC9 /* libPods-AJVision.a */; };
-		781288F72033EF4400F69130 /* MMHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 781288F42033EF4400F69130 /* MMHomeViewController.xib */; };
-		781288F82033EF4400F69130 /* MMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781288F52033EF4400F69130 /* MMHomeViewController.m */; };
-		781289132033EF6600F69130 /* FCBodyDetectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781288FB2033EF6600F69130 /* FCBodyDetectViewController.m */; };
-		781289142033EF6600F69130 /* FCOCRIDCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781288FD2033EF6600F69130 /* FCOCRIDCardViewController.m */; };
-		781289152033EF6600F69130 /* FCSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 781288FE2033EF6600F69130 /* FCSearchViewController.xib */; };
-		781289162033EF6600F69130 /* FCCompareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 781288FF2033EF6600F69130 /* FCCompareViewController.xib */; };
-		781289172033EF6600F69130 /* FCOCRDriverLicenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781289012033EF6600F69130 /* FCOCRDriverLicenceViewController.m */; };
-		781289182033EF6600F69130 /* FCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781289022033EF6600F69130 /* FCBaseViewController.m */; };
-		781289192033EF6600F69130 /* FCBodySegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781289062033EF6600F69130 /* FCBodySegmentViewController.m */; };
-		7812891A2033EF6600F69130 /* FCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781289072033EF6600F69130 /* FCSearchViewController.m */; };
-		7812891B2033EF6600F69130 /* NSMutableAttributedString+FCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 781289092033EF6600F69130 /* NSMutableAttributedString+FCExtension.m */; };
-		7812891C2033EF6600F69130 /* FCmergefaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7812890D2033EF6600F69130 /* FCmergefaceViewController.m */; };
-		7812891D2033EF6600F69130 /* FCCompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7812890E2033EF6600F69130 /* FCCompareViewController.m */; };
-		7812891E2033EF6600F69130 /* FCDetectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7812890F2033EF6600F69130 /* FCDetectViewController.m */; };
-		7812891F2033EF6600F69130 /* FCOCRVehicleLicenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781289122033EF6600F69130 /* FCOCRVehicleLicenseViewController.m */; };
-		781289332033F07700F69130 /* FCPPMergeface.m in Sources */ = {isa = PBXBuildFile; fileRef = 781289232033F07700F69130 /* FCPPMergeface.m */; };
-		781289342033F07700F69130 /* FCPPFaceDetect.m in Sources */ = {isa = PBXBuildFile; fileRef = 781289242033F07700F69130 /* FCPPFaceDetect.m */; };
-		781289352033F07700F69130 /* FCPPFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 781289272033F07700F69130 /* FCPPFace.m */; };
-		781289362033F07700F69130 /* FCPPOCR.m in Sources */ = {isa = PBXBuildFile; fileRef = 781289282033F07700F69130 /* FCPPOCR.m */; };
-		781289372033F07700F69130 /* UIImage+FCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7812892A2033F07700F69130 /* UIImage+FCExtension.m */; };
-		781289382033F07700F69130 /* FCPPApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 7812892C2033F07700F69130 /* FCPPApi.m */; };
-		781289392033F07700F69130 /* FCPPFaceSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7812892D2033F07700F69130 /* FCPPFaceSet.m */; };
-		7812893A2033F07700F69130 /* FCPPBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 781289312033F07700F69130 /* FCPPBody.m */; };
 		78B47D952029BCDF008EC2DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B47D942029BCDF008EC2DF /* AppDelegate.m */; };
 		78B47D982029BCDF008EC2DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B47D972029BCDF008EC2DF /* ViewController.m */; };
 		78B47D9B2029BCDF008EC2DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B47D992029BCDF008EC2DF /* Main.storyboard */; };
@@ -77,51 +54,6 @@
 		1E31AD0691CB8DFE03F81CC9 /* libPods-AJVision.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AJVision.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		350636924DB72281D76F8A02 /* libPods-AJVisionUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AJVisionUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77728D37DC35BC4BB1C2B852 /* Pods-AJVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AJVision.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AJVision/Pods-AJVision.debug.xcconfig"; sourceTree = "<group>"; };
-		781288F42033EF4400F69130 /* MMHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMHomeViewController.xib; sourceTree = "<group>"; };
-		781288F52033EF4400F69130 /* MMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHomeViewController.m; sourceTree = "<group>"; };
-		781288F62033EF4400F69130 /* MMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHomeViewController.h; sourceTree = "<group>"; };
-		781288FB2033EF6600F69130 /* FCBodyDetectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBodyDetectViewController.m; sourceTree = "<group>"; };
-		781288FC2033EF6600F69130 /* NSMutableAttributedString+FCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+FCExtension.h"; sourceTree = "<group>"; };
-		781288FD2033EF6600F69130 /* FCOCRIDCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCOCRIDCardViewController.m; sourceTree = "<group>"; };
-		781288FE2033EF6600F69130 /* FCSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCSearchViewController.xib; sourceTree = "<group>"; };
-		781288FF2033EF6600F69130 /* FCCompareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCCompareViewController.xib; sourceTree = "<group>"; };
-		781289002033EF6600F69130 /* FCmergefaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCmergefaceViewController.h; sourceTree = "<group>"; };
-		781289012033EF6600F69130 /* FCOCRDriverLicenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCOCRDriverLicenceViewController.m; sourceTree = "<group>"; };
-		781289022033EF6600F69130 /* FCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBaseViewController.m; sourceTree = "<group>"; };
-		781289032033EF6600F69130 /* FCDetectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCDetectViewController.h; sourceTree = "<group>"; };
-		781289042033EF6600F69130 /* FCCompareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCompareViewController.h; sourceTree = "<group>"; };
-		781289052033EF6600F69130 /* FCOCRVehicleLicenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCOCRVehicleLicenseViewController.h; sourceTree = "<group>"; };
-		781289062033EF6600F69130 /* FCBodySegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBodySegmentViewController.m; sourceTree = "<group>"; };
-		781289072033EF6600F69130 /* FCSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCSearchViewController.m; sourceTree = "<group>"; };
-		781289082033EF6600F69130 /* FCOCRIDCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCOCRIDCardViewController.h; sourceTree = "<group>"; };
-		781289092033EF6600F69130 /* NSMutableAttributedString+FCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+FCExtension.m"; sourceTree = "<group>"; };
-		7812890A2033EF6600F69130 /* FCBodyDetectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBodyDetectViewController.h; sourceTree = "<group>"; };
-		7812890B2033EF6600F69130 /* FCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBaseViewController.h; sourceTree = "<group>"; };
-		7812890C2033EF6600F69130 /* FCOCRDriverLicenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCOCRDriverLicenceViewController.h; sourceTree = "<group>"; };
-		7812890D2033EF6600F69130 /* FCmergefaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCmergefaceViewController.m; sourceTree = "<group>"; };
-		7812890E2033EF6600F69130 /* FCCompareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCompareViewController.m; sourceTree = "<group>"; };
-		7812890F2033EF6600F69130 /* FCDetectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCDetectViewController.m; sourceTree = "<group>"; };
-		781289102033EF6600F69130 /* FCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSearchViewController.h; sourceTree = "<group>"; };
-		781289112033EF6600F69130 /* FCBodySegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBodySegmentViewController.h; sourceTree = "<group>"; };
-		781289122033EF6600F69130 /* FCOCRVehicleLicenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCOCRVehicleLicenseViewController.m; sourceTree = "<group>"; };
-		781289212033F07700F69130 /* FCPPConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPPConfig.h; sourceTree = "<group>"; };
-		781289222033F07700F69130 /* FCPPApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPPApi.h; sourceTree = "<group>"; };
-		781289232033F07700F69130 /* FCPPMergeface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCPPMergeface.m; sourceTree = "<group>"; };
-		781289242033F07700F69130 /* FCPPFaceDetect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCPPFaceDetect.m; sourceTree = "<group>"; };
-		781289252033F07700F69130 /* FCPPSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPPSDK.h; sourceTree = "<group>"; };
-		781289262033F07700F69130 /* FCPPFaceSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPPFaceSet.h; sourceTree = "<group>"; };
-		781289272033F07700F69130 /* FCPPFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCPPFace.m; sourceTree = "<group>"; };
-		781289282033F07700F69130 /* FCPPOCR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCPPOCR.m; sourceTree = "<group>"; };
-		781289292033F07700F69130 /* FCPPBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPPBody.h; sourceTree = "<group>"; };
-		7812892A2033F07700F69130 /* UIImage+FCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FCExtension.m"; sourceTree = "<group>"; };
-		7812892B2033F07700F69130 /* FCPPMergeface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPPMergeface.h; sourceTree = "<group>"; };
-		7812892C2033F07700F69130 /* FCPPApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCPPApi.m; sourceTree = "<group>"; };
-		7812892D2033F07700F69130 /* FCPPFaceSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCPPFaceSet.m; sourceTree = "<group>"; };
-		7812892E2033F07700F69130 /* FCPPFaceDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPPFaceDetect.h; sourceTree = "<group>"; };
-		7812892F2033F07700F69130 /* FCPPFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPPFace.h; sourceTree = "<group>"; };
-		781289302033F07700F69130 /* UIImage+FCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FCExtension.h"; sourceTree = "<group>"; };
-		781289312033F07700F69130 /* FCPPBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCPPBody.m; sourceTree = "<group>"; };
-		781289322033F07700F69130 /* FCPPOCR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPPOCR.h; sourceTree = "<group>"; };
 		78B47D902029BCDF008EC2DF /* AJVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AJVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B47D932029BCDF008EC2DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78B47D942029BCDF008EC2DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -206,88 +138,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		781288F22033EF4400F69130 /* Beauty */ = {
-			isa = PBXGroup;
-			children = (
-				781288F32033EF4400F69130 /* Controller */,
-			);
-			path = Beauty;
-			sourceTree = "<group>";
-		};
-		781288F32033EF4400F69130 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				781288F42033EF4400F69130 /* MMHomeViewController.xib */,
-				781288F52033EF4400F69130 /* MMHomeViewController.m */,
-				781288F62033EF4400F69130 /* MMHomeViewController.h */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		781288F92033EF5A00F69130 /* Functions */ = {
-			isa = PBXGroup;
-			children = (
-				781288FA2033EF6600F69130 /* Controller */,
-			);
-			path = Functions;
-			sourceTree = "<group>";
-		};
-		781288FA2033EF6600F69130 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				7812890B2033EF6600F69130 /* FCBaseViewController.h */,
-				781289022033EF6600F69130 /* FCBaseViewController.m */,
-				781289032033EF6600F69130 /* FCDetectViewController.h */,
-				7812890F2033EF6600F69130 /* FCDetectViewController.m */,
-				781289002033EF6600F69130 /* FCmergefaceViewController.h */,
-				7812890D2033EF6600F69130 /* FCmergefaceViewController.m */,
-				7812890A2033EF6600F69130 /* FCBodyDetectViewController.h */,
-				781288FB2033EF6600F69130 /* FCBodyDetectViewController.m */,
-				781289102033EF6600F69130 /* FCSearchViewController.h */,
-				781289072033EF6600F69130 /* FCSearchViewController.m */,
-				781288FE2033EF6600F69130 /* FCSearchViewController.xib */,
-				781289042033EF6600F69130 /* FCCompareViewController.h */,
-				7812890E2033EF6600F69130 /* FCCompareViewController.m */,
-				781288FF2033EF6600F69130 /* FCCompareViewController.xib */,
-				7812890C2033EF6600F69130 /* FCOCRDriverLicenceViewController.h */,
-				781289012033EF6600F69130 /* FCOCRDriverLicenceViewController.m */,
-				781289052033EF6600F69130 /* FCOCRVehicleLicenseViewController.h */,
-				781289122033EF6600F69130 /* FCOCRVehicleLicenseViewController.m */,
-				781289082033EF6600F69130 /* FCOCRIDCardViewController.h */,
-				781288FD2033EF6600F69130 /* FCOCRIDCardViewController.m */,
-				781289112033EF6600F69130 /* FCBodySegmentViewController.h */,
-				781289062033EF6600F69130 /* FCBodySegmentViewController.m */,
-				781288FC2033EF6600F69130 /* NSMutableAttributedString+FCExtension.h */,
-				781289092033EF6600F69130 /* NSMutableAttributedString+FCExtension.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		781289202033F07700F69130 /* FCPPSDK */ = {
-			isa = PBXGroup;
-			children = (
-				781289212033F07700F69130 /* FCPPConfig.h */,
-				781289222033F07700F69130 /* FCPPApi.h */,
-				781289232033F07700F69130 /* FCPPMergeface.m */,
-				781289242033F07700F69130 /* FCPPFaceDetect.m */,
-				781289252033F07700F69130 /* FCPPSDK.h */,
-				781289262033F07700F69130 /* FCPPFaceSet.h */,
-				781289272033F07700F69130 /* FCPPFace.m */,
-				781289282033F07700F69130 /* FCPPOCR.m */,
-				781289292033F07700F69130 /* FCPPBody.h */,
-				7812892A2033F07700F69130 /* UIImage+FCExtension.m */,
-				7812892B2033F07700F69130 /* FCPPMergeface.h */,
-				7812892C2033F07700F69130 /* FCPPApi.m */,
-				7812892D2033F07700F69130 /* FCPPFaceSet.m */,
-				7812892E2033F07700F69130 /* FCPPFaceDetect.h */,
-				7812892F2033F07700F69130 /* FCPPFace.h */,
-				781289302033F07700F69130 /* UIImage+FCExtension.h */,
-				781289312033F07700F69130 /* FCPPBody.m */,
-				781289322033F07700F69130 /* FCPPOCR.h */,
-			);
-			path = FCPPSDK;
-			sourceTree = "<group>";
-		};
 		78B47D872029BCDF008EC2DF = {
 			isa = PBXGroup;
 			children = (
@@ -316,8 +166,6 @@
 				78ECACB5202AF98F00389B98 /* AJVisionPrefix.pch */,
 				78B47D932029BCDF008EC2DF /* AppDelegate.h */,
 				78B47D942029BCDF008EC2DF /* AppDelegate.m */,
-				781288F92033EF5A00F69130 /* Functions */,
-				781288F22033EF4400F69130 /* Beauty */,
 				78F57041202C045E00FA363D /* FaceAnalysis */,
 				78B47DC5202A9822008EC2DF /* ImageAnalysis */,
 				78B47DD9202AE2F0008EC2DF /* Expand */,
@@ -363,7 +211,6 @@
 		78B47DCB202AE251008EC2DF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				781289202033F07700F69130 /* FCPPSDK */,
 				78F5704A202C057200FA363D /* Images */,
 				78B47DCC202AE251008EC2DF /* RequestTool */,
 			);
@@ -597,11 +444,8 @@
 				78B47DA02029BCDF008EC2DF /* LaunchScreen.storyboard in Resources */,
 				78B47DCA202A9853008EC2DF /* ImageRecongnitionViewController.xib in Resources */,
 				78F57049202C04A500FA363D /* FaceAnalysisViewController.xib in Resources */,
-				781288F72033EF4400F69130 /* MMHomeViewController.xib in Resources */,
 				78B47D9D2029BCDF008EC2DF /* Assets.xcassets in Resources */,
-				781289162033EF6600F69130 /* FCCompareViewController.xib in Resources */,
 				78F5704D202C063000FA363D /* icon_dancer.png in Resources */,
-				781289152033EF6600F69130 /* FCSearchViewController.xib in Resources */,
 				78F5704F202C065D00FA363D /* icon_painting.png in Resources */,
 				78B47D9B2029BCDF008EC2DF /* Main.storyboard in Resources */,
 			);
@@ -790,37 +634,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7812891D2033EF6600F69130 /* FCCompareViewController.m in Sources */,
-				781289192033EF6600F69130 /* FCBodySegmentViewController.m in Sources */,
 				78B47D982029BCDF008EC2DF /* ViewController.m in Sources */,
 				78ECACB3202AF88300389B98 /* IRLabelModel.m in Sources */,
 				78B47DA32029BCDF008EC2DF /* main.m in Sources */,
 				78B47D952029BCDF008EC2DF /* AppDelegate.m in Sources */,
-				781289372033F07700F69130 /* UIImage+FCExtension.m in Sources */,
-				7812891F2033EF6600F69130 /* FCOCRVehicleLicenseViewController.m in Sources */,
-				781289182033EF6600F69130 /* FCBaseViewController.m in Sources */,
-				781289362033F07700F69130 /* FCPPOCR.m in Sources */,
-				781289172033EF6600F69130 /* FCOCRDriverLicenceViewController.m in Sources */,
-				781289342033F07700F69130 /* FCPPFaceDetect.m in Sources */,
 				78B47DD7202AE25F008EC2DF /* EGOCache.m in Sources */,
-				781289332033F07700F69130 /* FCPPMergeface.m in Sources */,
-				781289142033EF6600F69130 /* FCOCRIDCardViewController.m in Sources */,
 				78B47DC9202A9853008EC2DF /* ImageRecongnitionViewController.m in Sources */,
-				781289392033F07700F69130 /* FCPPFaceSet.m in Sources */,
 				78B47DD6202AE25F008EC2DF /* Reachability.m in Sources */,
-				781289382033F07700F69130 /* FCPPApi.m in Sources */,
-				7812893A2033F07700F69130 /* FCPPBody.m in Sources */,
-				781289352033F07700F69130 /* FCPPFace.m in Sources */,
 				78B47DD5202AE25F008EC2DF /* NetworkUnit.m in Sources */,
 				78B47DD8202AE25F008EC2DF /* RequestTool.m in Sources */,
-				7812891A2033EF6600F69130 /* FCSearchViewController.m in Sources */,
-				781289132033EF6600F69130 /* FCBodyDetectViewController.m in Sources */,
 				78F57048202C04A500FA363D /* FaceAnalysisViewController.m in Sources */,
 				78F57052202C365C00FA363D /* GFHTTPSessionManager.m in Sources */,
-				7812891C2033EF6600F69130 /* FCmergefaceViewController.m in Sources */,
-				781288F82033EF4400F69130 /* MMHomeViewController.m in Sources */,
-				7812891E2033EF6600F69130 /* FCDetectViewController.m in Sources */,
-				7812891B2033EF6600F69130 /* NSMutableAttributedString+FCExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
