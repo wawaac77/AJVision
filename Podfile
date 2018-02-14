@@ -13,6 +13,7 @@ target 'AJVision' do
     pod 'MJRefresh'
     pod 'Masonry'
     pod 'SDWebImage', '~> 4.0'
+    pod 'MBProgressHUD', '~> 1.1.0'
 
 
   target 'AJVisionTests' do

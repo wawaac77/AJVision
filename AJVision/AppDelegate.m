@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ImageRecongnitionViewController.h"
-#import "FaceAnalysisViewController.h"
+#import "MMHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -42,7 +42,7 @@
     imageNav.tabBarItem = imageBarItem;
 
     
-    FaceAnalysisViewController *faceVC = [[FaceAnalysisViewController alloc] init];
+    MMHomeViewController *faceVC = [[MMHomeViewController alloc] init];
     UINavigationController *faceNav = [[UINavigationController alloc] initWithRootViewController:faceVC];
     faceVC.navigationController.navigationBar.barTintColor = [UIColor blackColor];
     faceVC.navigationController.navigationBar.tintColor = [UIColor blackColor];

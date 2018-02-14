@@ -57,15 +57,19 @@
     self.chosenImage = chosenImage;
     self.imageView.image = chosenImage;
     self.imageBase64 = [self encodeToBase64String:chosenImage];
+    NSLog(@"self.imageBase64 = %@", self.imageBase64);
     [picker dismissViewControllerAnimated:YES completion:nil];
     
 }
 
 #pragma mark - Base64
 - (NSString *)encodeToBase64String:(UIImage *)image {
-    NSData * data = [UIImagePNGRepresentation(image) base64EncodedDataWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    NSData * data = [UIImageJPEGRepresentation(image, 0.5) base64EncodedDataWithOptions:NSDataBase64Encoding64CharacterLineLength];
     return [NSString stringWithUTF8String:[data bytes]];
-    //return [UIImagePNGRepresentation(image) base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+   
+//    return [UIImagePNGRepresentation(image) base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    
+//    return [UIImageJPEGRepresentation(image, 0.7) base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
 }
 
 #pragma mark - API
@@ -115,13 +119,13 @@
     NSData *imageData = UIImagePNGRepresentation(_chosenImage);
     
     //NSString *strPostValues = [NSString stringWithFormat:@"image_file=%@&return_landmark=%@&return_attributes=%@", imageData, returnLandmark, attributesString];
-    NSString *strPostValues = [NSString stringWithFormat:@"image_base64=%@&return_landmark=%@&return_attributes=%@", _imageBase64, returnLandmark, attributesString];
+    NSString *strPostValues = [NSString stringWithFormat:@"image_base64=%@", _imageBase64];
     //NSString *strPostValues = [NSString stringWithFormat:@"return_landmark=%@&return_attributes=%@", returnLandmark, attributesString];
     NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[strPostValues length]];
     NSData *postData = [strPostValues dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
 
    
-    NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"https://api-cn.faceplusplus.com/facepp/v3/detect?api_key=%@&api_secret=%@", apiKey, apiSecret]];
+    NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"https://api-cn.faceplusplus.com/facepp/v3/detect?api_key=%@&api_secret=%@&return_landmark=%@&return_attributes=%@", apiKey, apiSecret, returnLandmark, attributesString]];
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     //[req setValue:@"application/json" forHTTPHeaderField:@"Accept"];
@@ -274,6 +278,47 @@
     [dataTask resume];
 }
 
+#pragma mark - Recong 5
+- (void)recongImage_five {
+    NSString *attributesString = @"gender,age,beauty";
+    NSString *apiKey = @"hwMnzFXLOpPq79ZbzVnkveJQdMH_dZi9";
+    NSString *apiSecret = @"WGj7ODShnK7a2o-zXFSgmFnQbKnpP8bV";
+    NSNumber *returnLandmark = @1;
+    NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"https://api-cn.faceplusplus.com/facepp/v3/detect?api_key=%@&api_secret=%@&return_landmark=%@&return_attributes=%@", apiKey, apiSecret, returnLandmark, attributesString]];
+    
+    NSString *boundary = @"*****";
+    NSMutableData *body = [NSMutableData data];
+    
+    NSData *imageData = UIImageJPEGRepresentation(_chosenImage, 0.7); //AliceJ
+    
+    if (imageData) {
+        [body appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+        [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"image.jpg\"\r\n", @"image"] dataUsingEncoding:NSUTF8StringEncoding]];
+        [body appendData:[@"Content-Type: application/octet-stream\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+        [body appendData:[NSData dataWithData:imageData]];
+        [body appendData:[[NSString stringWithFormat:@"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    [body appendData:[[NSString stringWithFormat:@"--%@--\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    sessionConfiguration.HTTPAdditionalHeaders = @{
+                                                   @"Authorization" : [@"Bearer " stringByAppendingString:@"Happy Authorization"],
+                                                   @"Content-Type"  : [NSString stringWithFormat:@"multipart/form-data; boundary=%@", boundary]
+                                                   };
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration delegate:nil delegateQueue:nil];
+    
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    request.HTTPMethod = @"POST";
+    request.HTTPBody = body;
+    
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSLog(@"data %@", data);
+        NSLog(@"response %@", response);
+    }];
+    [dataTask resume];
+}
+
 #pragma mark - Button Clicked
 - (IBAction)photoButtonClicked:(id)sender {
     UIAlertController *alert= [UIAlertController
@@ -307,7 +352,7 @@
     if (self.imageBase64 == nil || self.imageBase64 == NULL || [self.imageBase64 isEqualToString:@""]) {
         
     } else {
-        [self recongFace_two];
+        [self recongImage_five];
     }
 }
 @end
