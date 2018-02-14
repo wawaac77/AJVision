@@ -15,5 +15,9 @@
 @property (weak, nonatomic) IBOutlet UIView *bgView_four;
 @property (weak, nonatomic) IBOutlet UIButton *button_one;
 - (IBAction)buttonOneClicked:(id)sender;
+- (IBAction)buttonTwoClicked:(id)sender;
+- (IBAction)buttonThreeClicked:(id)sender;
+
+- (IBAction)buttonFourClicked:(id)sender;
 
 @end

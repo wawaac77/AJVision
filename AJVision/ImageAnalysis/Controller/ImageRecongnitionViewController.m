@@ -79,8 +79,10 @@
     NSDictionary *dic = @{@"requests" : requestsArray};
 
     NSString *thisAPI = [NSString stringWithFormat:@"https://vision.googleapis.com/v1/images:annotate?key=%@", @"AIzaSyB5NJSCikP1fRJpI0PGfholA5lzMIi6Llc"];
+    __weak typeof(self) weakSelf = self;
     [RequestTool requestWithType:POST URL:thisAPI parameter:dic successComplete:^(id responseObject) {
         NSLog(@"responseObject %@", responseObject);
+        [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         NSMutableArray *responses = [responseObject objectForKey:@"responses"];
         NSMutableArray *labelAnnotationsArray = [NSDictionary mj_objectArrayWithKeyValuesArray:responses];
         self.resultLabelArray = [IRLabelModel mj_objectArrayWithKeyValuesArray:[labelAnnotationsArray[0] objectForKey:@"labelAnnotations"]];
@@ -184,6 +186,7 @@
     if (self.imageBase64 == nil || self.imageBase64 == NULL || [self.imageBase64 isEqualToString:@""]) {
         
     } else {
+        [MBProgressHUD showHUDAddedTo:self.view animated:YES];
         [self recongImage];
     }
 }

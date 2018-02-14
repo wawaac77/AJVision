@@ -35,6 +35,7 @@
     [bgView addSubview:self.imageView];
     
     self.tableView.tableHeaderView = bgView;
+    self.tableView.tableFooterView = [UIView new];
     [self.view addSubview:self.tableView];
 }
 
@@ -127,7 +128,7 @@
     return label;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 35;
+    return 0;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return self.dataArray.count ? 35 : 0;

@@ -23,9 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.imageView1.image = [UIImage imageNamed:@"sunli-1"];
-    self.imageView2.image = [UIImage imageNamed:@"sunli-2"];
-    [self begainCompare:nil];
+    //self.imageView1.image = [UIImage imageNamed:@"sunli-1"];
+    //self.imageView2.image = [UIImage imageNamed:@"sunli-2"];
+    //[self begainCompare:nil];
 }
 
 - (IBAction)begainCompare:(UIButton *)sender {

@@ -145,6 +145,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.image = [UIImage imageNamed:@""];
     //[self handleImage:self.image];
 }
 

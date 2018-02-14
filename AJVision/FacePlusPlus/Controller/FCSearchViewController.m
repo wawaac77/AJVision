@@ -9,7 +9,7 @@
 #import "FCSearchViewController.h"
 #import "FCPPSDK.h"
 #import "MBProgressHUD.h"
-#import "SDImageCache.h"
+#import <SDImageCache.h>
 
 static NSString *cellId = @"faceCellId";
 #define faceFilePath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"face.plist"]
@@ -106,7 +106,8 @@ static NSString *cellId = @"faceCellId";
                         //2.1建立映射关系
                         for (NSString *faceToken in faceTokens) {
                             //把图片存储到本地，faceToken作为key存储图片
-                            [[SDImageCache sharedImageCache] storeImage:image forKey:faceToken];
+                            [[SDImageCache sharedImageCache] storeImage:image forKey:faceToken completion:nil];
+                            //[[SDImageCache sharedImageCache] storeImage:image forKey:faceToken];
                            
                             NSDictionary *dic = @{@"imageKey": faceToken,  //对应的本地的图片
 //                                                  @"personName" : @"xxx", //设置对应人的名字
