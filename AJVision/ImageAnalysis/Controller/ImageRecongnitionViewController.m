@@ -177,7 +177,7 @@
     [alert addAction:cancel];
     
     [self presentViewController:alert animated:YES completion:nil];
-    [self pickFromAlbum];
+
 }
 
 - (IBAction)recongButtonClicked:(id)sender {
