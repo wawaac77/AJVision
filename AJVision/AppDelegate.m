@@ -25,8 +25,8 @@
     // Root View Controller
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.delegate = self;
-    tabBarController.tabBar.barTintColor = [UIColor blackColor];
-    tabBarController.tabBar.tintColor = [UIColor blackColor];
+    tabBarController.tabBar.barTintColor = [UIColor colorWithRed:53.0f/255.0f green:87.0f/255.0f blue:125.0f/255.0f alpha:0.5];
+    tabBarController.tabBar.tintColor = [UIColor whiteColor];
 
     ImageRecongnitionViewController *imageRecongVC = [[ImageRecongnitionViewController alloc] init];
     UINavigationController *imageNav = [[UINavigationController alloc] initWithRootViewController:imageRecongVC];

@@ -10,6 +10,7 @@
 
 @interface FCCompareViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *resultNumLabel;
 
 
 @end

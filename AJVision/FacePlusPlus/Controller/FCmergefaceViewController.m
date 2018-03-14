@@ -135,7 +135,7 @@
         [btn setTitle:@"选择融合图" forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont systemFontOfSize:12];
         [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [btn setBackgroundColor:[UIColor colorWithRed:9.0/255.0 green:133.0/255.0 blue:255.0/255.0 alpha:1]];
+        [btn setBackgroundColor:[UIColor colorWithRed:246.0/255.0 green:114.0/255.0 blue:128.0/255.0 alpha:1]];
         [self.contentScro addSubview:btn];
     }
     return _imageViewTarget;
@@ -150,7 +150,7 @@
         UIButton* btn = [[UIButton alloc]initWithFrame:CGRectMake(_imageViewResult.frame.origin.x, _imageViewTarget.frame.origin.y+_imageViewTarget.frame.size.height+50, _imageViewResult.frame.size.width, 44)];
         [btn setTitle:@"开始融合" forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [btn setBackgroundColor:[UIColor colorWithRed:9.0/255.0 green:133.0/255.0 blue:255.0/255.0 alpha:1]];
+        [btn setBackgroundColor:[UIColor colorWithRed:255.0/255.0 green:126.0/255.0 blue:121.0/255.0 alpha:1]];
         [btn addTarget:self action:@selector(beginMergeImg) forControlEvents:UIControlEventTouchUpInside];
         self.mergeBtn = btn;
         [self.contentScro addSubview:btn];

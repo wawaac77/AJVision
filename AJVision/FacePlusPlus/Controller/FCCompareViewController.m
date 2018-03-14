@@ -56,6 +56,7 @@
             NSDictionary *thresholds = info[@"thresholds"];
             NSMutableString *string = [NSMutableString string];
             [string appendFormat:@"置信度: %@\n",confidence];
+            _resultNumLabel.text = [NSString stringWithFormat:@"%@", confidence];
             [string appendFormat:@"不同误识率下的置信度阈值:\n"];
             [thresholds enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
                 [string appendFormat:@"%@ : %@\n",key,obj];
